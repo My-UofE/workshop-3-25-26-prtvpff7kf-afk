@@ -117,7 +117,7 @@ Code to recitify the value of `x` i.e. the value of `x` is set to zero if it is 
 ```
 x = (x>0)?x:0
 ```
-
+// true x=x false x=0
 Example 2: 
 
 Code that sets `y` to be 1 if `x` is below 100, and zero otherwise.
@@ -125,7 +125,7 @@ Code that sets `y` to be 1 if `x` is below 100, and zero otherwise.
 ```
 int y = (x<100)?1:0;
 ```
-
+// true x<100 and y=1 , false x>=100 y=0
 Example 3: 
 
 Suppose `day` stores 0 for Sunday, 1 for Monday ... 6 for Saturday. 
@@ -135,7 +135,7 @@ The code below is a nested ternary operator that sets `isWeekend` to be 1 if `da
 ```
 int isWeekend = (day==0)?1:(day==6)?1:0
 ```
-
+// if day is 0 then isWeekend=1, if day is 6 then isWeekend = 1, if day is 1-5 then isWeekend is 0
 **1.** Below is a function that takes an input age processes this value so that:
 
  - if it is 18 or less it returns 0
